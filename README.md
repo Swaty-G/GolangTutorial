@@ -1,4 +1,4 @@
-Sure, here's a basic `README.md` file for your project. You can add more details as per your project's requirements.
+This a code repo for learning Golang. It contains the basic concepts of Golang.
 
 ```markdown
 # GolangTutorial
