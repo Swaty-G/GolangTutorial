@@ -44,20 +44,18 @@ The project has several Go files each demonstrating different concepts in Go:
 - `04conversion/main.go`: A program demonstrating type conversion in Go
 - `05mymaths/main.go`: A program demonstrating math operations in Go
 - `06mytime/main.go`: A program demonstrating time operations in Go
-- `07mypointer/main.go`: A program demonstrating the use of pointers in Go
+- `07mypointers/main.go`: A program demonstrating the use of pointers in Go
 - `08myarray/main.go`: A program demonstrating the use of arrays in Go
+- `09myslices/main.go`: A program demonstrating the use of slices in Go
+- `10mymaps/main.go`: A program demonstrating the use of maps in Go
 
 
 ## Authors
 
-- **Swaty-G**
+- **Swaty Gupta**
 
 ## Acknowledgments 
 https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa (Hitesh Choudhary Go lang tutorial)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-```
 
-Please replace the `LICENSE.md` link with the actual link to your license file if you have one.
