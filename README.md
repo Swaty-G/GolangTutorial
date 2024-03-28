@@ -58,6 +58,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `12myif/main.go`: A program demonstrating the use of if statements in Go
 - `13myswitch/main.go`: A program demonstrating the use of switch statements in Go
 - `14loops/main.go`: A program demonstrating the use of loops in Go
+- `15functions/main.go`: A program demonstrating the use of functions in Go
 
 
 ## Authors
