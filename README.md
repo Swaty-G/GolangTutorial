@@ -59,6 +59,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - `13myswitch/main.go`: A program demonstrating the use of switch statements in Go
 - `14loops/main.go`: A program demonstrating the use of loops in Go
 - `15functions/main.go`: A program demonstrating the use of functions in Go
+- `16methods/main.go`: A program demonstrating the use of methods in Go
+- `17defer/main.go`: A program demonstrating the use of defer in Go
 
 
 ## Authors
