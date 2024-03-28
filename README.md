@@ -34,6 +34,12 @@ Run the main.go file:
 go run main.go
 ```
 
+## Important Links
+- https://pkg.go.dev/  (for go packages)   
+- https://golang.org/doc/  (for go documentation)
+- https://go.dev/play/  (for go playground)
+
+
 ## Project Structure
 
 The project has several Go files each demonstrating different concepts in Go:
@@ -50,6 +56,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - `10mymaps/main.go`: A program demonstrating the use of maps in Go
 - `11mystructs/main.go`: A program demonstrating the use of structs in Go
 - `12myif/main.go`: A program demonstrating the use of if statements in Go
+- `13myswitch/main.go`: A program demonstrating the use of switch statements in Go
+- `14loops/main.go`: A program demonstrating the use of loops in Go
 
 
 ## Authors
