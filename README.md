@@ -49,6 +49,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `09myslices/main.go`: A program demonstrating the use of slices in Go
 - `10mymaps/main.go`: A program demonstrating the use of maps in Go
 - `11mystructs/main.go`: A program demonstrating the use of structs in Go
+- `12myif/main.go`: A program demonstrating the use of if statements in Go
 
 
 ## Authors
