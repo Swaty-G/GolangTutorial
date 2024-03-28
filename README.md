@@ -61,6 +61,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `15functions/main.go`: A program demonstrating the use of functions in Go
 - `16methods/main.go`: A program demonstrating the use of methods in Go
 - `17defer/main.go`: A program demonstrating the use of defer in Go
+- `18files/main.go`: A program demonstrating file operations in Go
 
 
 ## Authors
