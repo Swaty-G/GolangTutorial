@@ -9,9 +9,9 @@ This is a tutorial project for learning Go programming language.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### Prerequisites
+### Usage
 
-- Go version 1.16 or higher
+- Go version 1.22.1
 - GoLand IDE 2023.3.5 or any other IDE with Go support
 
 ### Installing
@@ -48,6 +48,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `08myarray/main.go`: A program demonstrating the use of arrays in Go
 - `09myslices/main.go`: A program demonstrating the use of slices in Go
 - `10mymaps/main.go`: A program demonstrating the use of maps in Go
+- `11mystructs/main.go`: A program demonstrating the use of structs in Go
 
 
 ## Authors
