@@ -62,7 +62,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - `16methods/main.go`: A program demonstrating the use of methods in Go
 - `17defer/main.go`: A program demonstrating the use of defer in Go
 - `18files/main.go`: A program demonstrating file operations in Go
-- `19handlingwebrequests/main.go`: A program demonstrating handling web requests in Go
+- `19webrequests/main.go`: A program demonstrating handling web requests in Go
+- `20urls/main.go`: A program demonstrating handling URLs in Go
 
 
 ## Authors
