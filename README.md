@@ -64,6 +64,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - `18files/main.go`: A program demonstrating file operations in Go
 - `19webrequests/main.go`: A program demonstrating handling web requests in Go
 - `20urls/main.go`: A program demonstrating handling URLs in Go
+- `lcowebserver`: A program creating a simple web server in Go
+- `21webreqverbs/main.go`: A program demonstrating handling get requests in Go
 
 
 ## Authors
@@ -72,6 +74,7 @@ The project has several Go files each demonstrating different concepts in Go:
 
 ## Acknowledgments 
 https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa (Hitesh Choudhary Go lang tutorial)
+https://github.com/hiteshchoudhary/golang (github repo for the above tutorial)
 
 
 
