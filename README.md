@@ -72,9 +72,50 @@ The project has several Go files each demonstrating different concepts in Go:
 
 - **Swaty Gupta**
 
-## Acknowledgments 
+### Acknowledgments 
 https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa (Hitesh Choudhary Go lang tutorial)
 https://github.com/hiteshchoudhary/golang (github repo for the above tutorial)
+
+### Prerequisites to run lco web server
+To install node-js and npm and run the following command in the terminal:
+
+
+1. Open your `.zshrc` file in a text editor.
+   ```bash
+   vim ~/.zshrc
+    ```
+2. Add the following lines to the end of the `.zshrc` file:
+
+    ```bash
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+    ```
+
+3. Save and exit the editor.
+
+
+4. Load the new `.zshrc` configuration** by either closing and reopening your terminal or by sourcing the `.zshrc` file with the following command:
+    ```bash
+    source ~/.zshrc
+    ```
+
+5. Verify the installation by typing:
+
+    ```bash
+    command -v nvm
+    ```
+This should output `nvm` if the installation was successful.
+
+6. Install Node.js using NVM by running:
+    ```bash
+       nvm install node # "node" is an alias for the latest version
+    ```
+
+7. Check the Node version to confirm it's installed:
+
+    ```bash
+       node -v
+    ```
 
 
 
