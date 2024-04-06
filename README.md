@@ -65,7 +65,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `19webrequests/main.go`: A program demonstrating handling web requests in Go
 - `20urls/main.go`: A program demonstrating handling URLs in Go
 - `lcowebserver`: A program creating a simple web server in Go
-- `21webreqverbs/main.go`: A program demonstrating handling get requests in Go
+- `21webreqverbs/main.go`: A program demonstrating handling get, post, post form requests in Go. Start the lco web server before running this program. 
 
 
 ## Authors

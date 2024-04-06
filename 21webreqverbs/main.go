@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"strings"
 )
 
@@ -11,6 +12,8 @@ func main() {
 	fmt.Println("Welcome to web verbs in Go")
 	url := "http://localhost:8000/get" //"https://httpbin.org/get"
 	PerformGetRequest(url)             // makes a GET request to the specified URL and prints the status code, content length, and content of the response body
+	PerformPostJsonRequest()           // makes a POST request to the specified URL with a JSON payload in the request body and prints the content of the response body
+	PerformPostFormRequest()           // makes a POST request to the specified URL with a form data in the request body and prints the content of the response body
 }
 
 // PerformGetRequest function makes a GET request to the specified URL and prints the status code, content length, and content of the response body
@@ -40,8 +43,48 @@ func PerformGetRequest(url string) {
 	if err != nil {
 		panic(err)
 	}
-	byteCount, _ := responseString.Write(content1)     // Write method of strings.Builder struct writes the content of the response body to the strings.Builder struct and returns the number of bytes written and any error in writing the content
-	fmt.Println("Content2 length: ", byteCount)        // prints the number of bytes written to the strings.Builder struct
-	fmt.Println("Content2: ", responseString.String()) // prints the content of the response body as a string using the String method of the strings.Builder struct
+	byteCount, _ := responseString.Write(content1)                        // Write method of strings.Builder struct writes the content of the response body to the strings.Builder struct and returns the number of bytes written and any error in writing the content
+	fmt.Println("Content2 length of the Get request: ", byteCount)        // prints the number of bytes written to the strings.Builder struct
+	fmt.Println("Content2 of the Get request: ", responseString.String()) // prints the content of the response body as a string using the String method of the strings.Builder struct
 
 }
+
+// PerformPostJsonRequest function makes a POST request to the specified URL with a JSON payload in the request body and prints the content of the response body
+func PerformPostJsonRequest() {
+	const myURL string = "http://localhost:8000/post" //"https://httpbin.org/post" // URL to be used for the POST request
+
+	// fake json payload to be sent in the POST request body
+	requestBody := strings.NewReader(`{"name":"swaty", "job":"developer"}`) // creating a fake JSON payload to be sent in the POST request body using the strings.NewReader function from the strings package
+
+	response, err := http.Post(myURL, "application/json", requestBody) // makes a POST request to the URL with the JSON payload in the request body and the content type as application/json
+	if err != nil {
+		panic(err)
+	}
+	defer response.Body.Close()               // caller's responsibility to close the connection
+	content, err := io.ReadAll(response.Body) // reads the content of the response body to avoid connection leaks
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("Content of the POST request is: ", string(content)) // prints the content of the response body of the POST request
+}
+
+// PerformPostFormRequest function makes a POST request to the specified URL with a form data in the request body and prints the content of the response body
+func PerformPostFormRequest() {
+	const myURL string = "http://localhost:8000/postform" //URL to be used for the POST form request
+
+	//form data to be sent in the POST request body
+	data := url.Values{} // creating a url.Values map to store the form data to be sent in the POST request body
+	data.Add("name", "swaty")
+	data.Add("job", "developer")
+	data.Add("location", "USA")
+
+	response, err := http.PostForm(myURL, data) //makes a POST request to the URL with the form data in the request body
+	if err != nil {
+		panic(err)
+	}
+	defer response.Body.Close()                                           //caller's responsibility to close the connection
+	content, err := io.ReadAll(response.Body)                             //reads the content of the response body to avoid connection leaks
+	fmt.Println("Content of the POST form request is: ", string(content)) //prints the content of the response body of the POST form request
+}
+
+/* difference between post and postform is that postform is used to send form data in the request body, while post is used to send any type of data in the request body like JSON, XML, etc. and the content type needs to be specified in the post request while it is not required in the postform request as it is set to application/x-www-form-urlencoded by default in the postform request in Go  */

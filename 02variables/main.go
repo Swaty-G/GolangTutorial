@@ -37,13 +37,19 @@ func main() {
 
 	//implicit type
 	var website = "https://swaty.com" // type is inferred from the value, so lexer does the job of inferring the type as it is declared, but you can't assign another type to it later eg: website = 5 will throw an error as it is inferred as string type, and you can't assign int to it later on in the code
-	fmt.Println(website)
+	fmt.Println(website)              // prints --> https://swaty.com
 
 	// no var style
 	numberOfUser := 300000 // no need to use var keyword, but you can't use this outside a function, this is a shorthand way of declaring and initializing a variable, and you can change the value later
 	fmt.Println(numberOfUser)
 
+	numberOfUser = 300001     // as you can change the value later
+	fmt.Println(numberOfUser) // prints --> 300001
+
 	//print constant
 	fmt.Println(LoginToken)
 	fmt.Printf("Variable is of type: %T \n", LoginToken) // prints --> Variable is of type: string
 }
+
+/*In summary, := is used for declaring and initializing a variable, while = is used for assigning a value to an already declared variable.
+The var keyword is used for declaring a variable with a specific type, while the type can be inferred from the value when using :=. Constants are declared using the const keyword and cannot be changed later in the code.*/
