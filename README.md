@@ -35,9 +35,11 @@ go run main.go
 ```
 
 ## Important Links
-- https://pkg.go.dev/  (for go packages)   
-- https://golang.org/doc/  (for go documentation)
-- https://go.dev/play/  (for go playground)
+- https://pkg.go.dev/  (Go packages)   
+- https://golang.org/doc/  (Go documentation)
+- https://go.dev/play/  (Go playground)
+- https://go.dev/ref/mod (Go Modules reference documentation link to understand the Go modules in detail and how to use them in Go)
+- https://pkg.go.dev/github.com/gorilla/mux (Gorilla Mux package documentation link to understand the package and its functions in detail)
 
 
 ## Project Structure
@@ -75,8 +77,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - **Swaty Gupta**
 
 ### Acknowledgments 
-https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa (Hitesh Choudhary Go lang tutorial)
-https://github.com/hiteshchoudhary/golang (github repo for the above tutorial)
+- https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa (Hitesh Choudhary Go lang tutorial)
+- https://github.com/hiteshchoudhary/golang (github repo for the above tutorial)
 
 ### Prerequisites to run lco web server
 To install node-js and npm and run the following command in the terminal:
