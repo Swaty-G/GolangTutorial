@@ -18,7 +18,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 Clone the repository:
 
-```bash
 git clone git@github.com:Swaty-G/GolangTutorial.git
 ```
 
@@ -70,7 +69,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `21webreqverbs/main.go`: A program demonstrating handling get, post, post form requests in Go. Start the lco web server before running this program. 
 - `22bitmorejson/main.go`: A program demonstrating how to consume json data by encoding and decoding in Go
 - `23mymodules/main.go`: A program demonstrating how to route requests in Go using gorilla/mux package 
-
+- `24buildapp/main.go`: A program demonstrating how to build APIs(GET, POST, PUT, DELETE) in Go using gorilla/mux packa
 
 ## Authors
 

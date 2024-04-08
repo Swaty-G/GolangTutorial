@@ -10,6 +10,7 @@ import (
 // https://go.dev/ref/mod -- Go Modules reference documentation link to understand the Go modules in detail and how to use them in Go
 // https://pkg.go.dev/github.com/gorilla/mux -- Gorilla Mux package documentation link to understand the package and its functions in detail
 
+// run -->  go get -u github.com/gorilla/mux  (to install the mux package in the Go project)
 func main() { // main function to start the execution of the program in Go and run the web server to handle the incoming HTTP requests and route them to the appropriate handler functions based on the request URL and method using the mux package
 	fmt.Println("Mod in Go")
 	greeter()                                   // calling the greeter function to greet the users of the mod package
