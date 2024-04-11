@@ -120,6 +120,13 @@ This should output `nvm` if the installation was successful.
     ```bash
        node -v
     ```
+   
+### Prerequisites to run MongoDB API 
+Create a MongoDB account and follow the instructions to create a cluster and connect to it.
+Login in to cloud.mongodb.com
+- Create a cluster
+- Connect to the cluster
+   
 
 
 
