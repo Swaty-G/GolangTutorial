@@ -69,7 +69,8 @@ The project has several Go files each demonstrating different concepts in Go:
 - `21webreqverbs/main.go`: A program demonstrating handling get, post, post form requests in Go. Start the lco web server before running this program. 
 - `22bitmorejson/main.go`: A program demonstrating how to consume json data by encoding and decoding in Go
 - `23mymodules/main.go`: A program demonstrating how to route requests in Go using gorilla/mux package 
-- `24buildapp/main.go`: A program demonstrating how to build APIs(GET, POST, PUT, DELETE) in Go using gorilla/mux packa
+- `24buildapp/main.go`: A program demonstrating how to build APIs(GET, POST, PUT, DELETE) in Go using gorilla/mux package. Used Postman to test the APIs.
+- `25mongoapi/main.go`: A program demonstrating how to connect to MongoDB and perform CRUD operations in Go by creating Netflix and performs CRUD operations on it. Used Postman to test the APIs.
 
 ## Authors
 
