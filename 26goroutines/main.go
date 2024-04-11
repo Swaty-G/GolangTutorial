@@ -7,7 +7,12 @@ import (
 	"time"
 )
 
-var waitGroup sync.WaitGroup // sync package is used to synchronize goroutines; WaitGroup is a struct that waits for a collection of goroutines to finish; it is used to wait for the completion of all goroutines launched from the main function
+var waitGroup sync.WaitGroup // pointer to a WaitGroup struct; WaitGroup is a struct that waits for a collection of goroutines to finish; it is used to wait for the completion of all goroutines launched from the main function
+// sync package is used to synchronize goroutines;
+
+var signals = []string{"test"}
+
+var mutex sync.Mutex // pointer to a Mutex struct; Mutex is a mutual exclusion lock; it is used to synchronize access to shared resources; it is used to prevent data
 
 func main() {
 	fmt.Println("Goroutines in Go")
@@ -27,6 +32,7 @@ func main() {
 		waitGroup.Add(1) // Add method increments the WaitGroup counter by one; it is used to add the number of goroutines to wait for
 	}
 	waitGroup.Wait() //blocks main from finishing until all goroutines are done executing (blocking) // Wait method blocks until the WaitGroup counter is zero; it is used to wait for the completion of all goroutines launched from the main function
+	fmt.Println("Signals:", signals)
 }
 
 // greeter function prints the string 5 times with a 2 millisecond delay between each print statement using time.Sleep function
@@ -41,8 +47,12 @@ func getStatusCode(endpoint string) {
 	defer waitGroup.Done() // Done method decrements the WaitGroup counter by one; it is used to signal the completion of a goroutine
 	result, err := http.Get(endpoint)
 	if err != nil {
-		fmt.Printf("OOPS! Error occurred for %s with error: %s", endpoint, err)
+		fmt.Printf("OOPS! Error occurred for %s with error: %s\n", endpoint, err)
 	} else {
+		mutex.Lock() // Lock method locks the mutex; it is used to synchronize access to shared resources; it is used to prevent
+		signals = append(signals, endpoint)
+		mutex.Unlock() // Unlock method unlocks the mutex; it is used to unlock the mutex
+
 		fmt.Printf("%d status code for %s\n", result.StatusCode, endpoint) // %d is a placeholder for an integer; %s is a placeholder for a string
 	}
 }
