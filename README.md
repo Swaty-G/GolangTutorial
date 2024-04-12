@@ -73,6 +73,7 @@ The project has several Go files each demonstrating different concepts in Go:
 - `25mongoapi/main.go`: A program demonstrating how to connect to MongoDB and perform CRUD operations in Go by creating Netflix and performs CRUD operations on it. Used Postman to test the APIs.
 - `26goroutines/main.go`: A program demonstrating how to use goroutines in Go to run multiple tasks concurrently using the go keyword and WaitGroup. Also, mutex is used. 
 - `27mutexAndAwaitGroups/main.go`: A program demonstrating how to use mutex and WaitGroup in Go to run multiple tasks concurrently using the go keyword and WaitGroup. First, the program runs without mutex and check race condition(go run --race .) and then with mutex to resolve the race condition.
+- `28channels/main.go`: A program demonstrating how to use channels in Go to communicate between goroutines. Used buffered and unbuffered channels.  
 
 ## Authors
 

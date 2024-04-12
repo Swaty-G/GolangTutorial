@@ -29,6 +29,7 @@ func main() {
 		mutex.Unlock()
 		waitGroup.Done()
 	}(waitGroup, mutex)
+	// waitGroup.Add(1) // add after each go routine or add 3 at once in the beginning
 	go func(waitGroup *sync.WaitGroup, m *sync.RWMutex) {
 		fmt.Println("Three Runs")
 		mutex.Lock()
